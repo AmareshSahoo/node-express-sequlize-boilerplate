@@ -1,0 +1,53 @@
+#Users
+firstName:string,
+lastName:string,
+phone:string,
+gender:string,
+DOB:dateOnly,
+addressId:string
+
+#Products
+code:string,
+name:string,
+description:string,
+mrp:number,
+stock:number,
+buyPrice:number
+
+ --attributes code:string,name:string,description:string,mrp:number,stock:number,buyPrice:number
+
+#Orders
+orderDate:date,
+shippedDate:date,remove
+orderStatus:string,
+comments:string
+-userId
+
+--attributes orderDate:date,shippedDate:date,orderStatus:string,comments:string
+
+#Addresses
+addressLine1:string,
+addressLine2:string,
+city:string,
+state:string,
+postalCode:string,
+country:string
+-userId
+
+--attributes addressLine1:string,addressLine2:string,city:string,state:string,postalCode:string,country:string
+
+#Payments
+date:date,
+amount:number
+-userId
+-orderId
+
+--attributes date:date,amount:number
+
+#OrderDetails
+quantityOrdered:number,
+priceEach:number
+-orderId
+-productId
+
+-- attributes quantityOrdered:number,priceEach:number
